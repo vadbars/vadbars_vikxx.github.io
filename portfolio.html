@@ -47,7 +47,7 @@
     <h2 class="mdl-card__title-text">Добро пожаловать в блог!</h2>
   </div>
   <div class="mdl-card__supporting-text mdl-color-text--white">
-    В будущем загрузка будет моментальная! На данном этапе загрузка длится не быстрее чем в официальном клиенте, однако после загрузки вы моментально получаете доступ к сотне своих последних постов и всем комментариям к ним! Они моментально открываются, когда вы нажимаете кнопку "читать"
+    В будущем загрузка будет моментальная! На данном этапе загрузка длится не быстрее, чем в официальном клиенте, однако после загрузки вы моментально получаете доступ к сотне своих последних постов и всем комментариям к ним! Они моментально открываются, когда вы нажимаете кнопку "читать"
   </div>
   
   
@@ -63,7 +63,7 @@
   </header>
   <div class="mdl-card mdl-cell  mdl-cell--6-col-tablet mdl-cell--4-col-phone  mdl-shadow--4dp "  v-bind:class="{ 'mdl-cell--9-col-desktop': !post.expand, 'mdl-cell--12-col-desktop': post.expand }">
     <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+        <h2 class="mdl-card__title-text"  @click="post.expand = true;showComm(post.plink)"><a :href="post.link">{{ post.title }}</a></h2>
     </div>
     <div class="mdl-card__supporting-text">
      
