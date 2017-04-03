@@ -1,6 +1,6 @@
 var vblog={
-        login:'vik',
-		replieLink:'blogs',
+        login:'vadbars',
+		replieLink:'ru--znakomstvo/@vadbars/v-polnyi-golos',
 		followTag:'ru--otkrytyij-kod',
 
 };	
